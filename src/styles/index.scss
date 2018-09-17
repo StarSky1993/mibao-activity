@@ -1,0 +1,133 @@
+*{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background: #f6f6f6;
+}
+
+h1,h2,h3,p,ul,li,div,input {
+	padding: 0;
+	margin: 0;
+	border: none;
+	list-style: none;
+}
+input:focus, button:focus, textarea:focus {
+	    outline: none
+}
+input, textarea{
+		&::-webkit-input-placeholder {
+	        color: #999;
+		}
+		&::-moz-placeholder {
+	        color: #999;
+		}
+		&::-ms-input-placeholder {
+	        color: #999;
+		}
+}
+textarea {
+    border: none;
+}
+:before, :after {
+	box-sizing: border-box;
+}
+input:focus, button:focus {
+	    outline: none
+}
+
+
+input:focus {
+	outline-offset: 0;
+	outline: none;
+}
+
+li,ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+// 分页器样式
+.my-bullet {
+   display: block;
+   width: 10px;
+   height: 1px;
+   background: #ccc;
+   margin-left: 5px;
+ }
+.swiper-pagination-bullet-active {
+   background: #69AFFF;
+}
+
+// 按钮样式
+.button {
+	height: 36px;
+	font-size: 16px;
+	color: #4c5b71;
+	border: 1px solid #4c5b71;
+	background: #fff;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 5px;
+	width: 164px;
+}
+.button-confirm {
+	background: #4c5b71;
+	color: #fff;
+}
+
+
+// confirm弹框字体颜色
+.weui-dialog__btn_primary {
+  color: #108ee9 !important;
+}
+.button-disable {
+	background: #ccc;
+	border: 1px solid #ccc;
+	color: #fff;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+
+::-webkit-scrollbar{
+  display:none;
+}
+
+
+.toast {
+    position: fixed;
+    left:50%;
+    transform:translate(-50%,-50%) scale(1);
+    word-wrap:break-word;
+    padding:10px;
+    text-align: center;
+    z-index:9999;
+    font-size:.3rem;
+    max-width:80%;
+    color: #fff;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.7);
+    overflow: hidden;
+}
+.toast.middle{
+    top:50%;
+}
+.toast.top{
+    top:10%;
+}
+.toast.bottom{
+    top:90%;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: transform .5s
+}
+.fade-enter, .fade-leave-active {
+  transform:translate(-50%,-50%) scale(0);
+}
+
+i {
+  font-style: normal;
+}
+
